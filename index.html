@@ -72,7 +72,8 @@
       var url = verse + ".txt";
       fetch(url)
         .then(response => response.text())
-        .then(text => poemDisplay.textContent = text);
+        .then(text => poemDisplay.textContent = text)
+        .catch(error => console.error(error));
     }
 
 
